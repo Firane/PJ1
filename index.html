@@ -3,13 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Bookie</title>
 		<link rel="stylesheet" href="./css/normalize.css">
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/caa96f4471.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
@@ -29,16 +29,16 @@
 		<main>
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			<h3>En plein centre ville ou en pleine nature</h3>
-			<section id="recherche-position">
-				<form action="" method="post">
+			<div id="recherche-position">
+				<form action="page-fictive.php" method="post">
 					<i class="fa-solid fa-location-dot"></i>
-					<input type="text" name="location" id="location" placeholder="Marseille, France" size="40"/>
+					<input type="text" name="location" id="location" placeholder="Marseille, France" size="40" maxlength="30"/>
 					<input type="submit" id="rechercher" value="Rechercher"/>
-					<button class="loupe" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+					<button class="loupe" type="button" name="rechercher" value="rechercher" aria-label="Center Align"><span class="material-icons" aria-hidden="true">format_align_center</span><i class="fa-solid fa-magnifying-glass"></i></button>
 				</form>
-			</section>
+			</div>
 			<!-- ********* FILTRES ********* -->
-			<section id="filtres">
+			<div id="filtres">
 				<div class="titre-filtres">
 					Filtres
 				</div>
@@ -68,12 +68,12 @@
 						<span class="nom-filtres">Animaux autorisés</span>
 					</li>
 				</ul>
-			</section>
+			</div>
 			<!-- ********** INFO ************ -->
-			<section id="info">
+			<div id="info">
 				<div id="icon-info"><i class="fa-solid fa-info"></i></div>
 				<span class="text-info">Plus de 500 logements sont disponibles dans cette ville</span>
-			</section>
+			</div>
 			<!-- ************ HEBERGEMENTS *********** -->
 				<div id="contenu-herbergement-populaire">
 					<section id="hebergement">
@@ -228,7 +228,7 @@
 								<a target="_blank" href="./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"><img src="./images/hebergements/resized/aw-creative-vgs8z60yt2c-unspla_tablette.jpg" alt="Photo Au coeur de l'eau" class="photo-populaire-tablette"></a>
 								<div class="infos-populaire">
 									<div>
-										<h4>Au coeur de l'eau Chambre d'hôtes</h4>
+										<h4>Au cœur de l'eau Chambre d'hôtes</h4>
 										<div class="prix-populaire">
 											Nuit à partir de 71
 											<strong>€</strong>
@@ -322,8 +322,7 @@
 						</div>
 					</div>
 				</section>
-			</main>
-		</section>
+		</main>
 		<footer>
 			<div class="block-footer" id="a-propos">
 				<h4 class="titre-footer">A propos</h4>
