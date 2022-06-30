@@ -154,8 +154,8 @@ form {
 }
 
 .filtres:hover {
-    border: #52a4f1 solid 2px;
-    border-left: 0px;
+    border : #deebff solid 1px;
+    background: #deebff
 }
 
 .fa-money-bill-wave,
